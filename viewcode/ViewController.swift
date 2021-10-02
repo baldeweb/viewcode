@@ -8,6 +8,12 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    let screen = GridBoxView()
+    
+    override func loadView() {
+        self.view = screen
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
