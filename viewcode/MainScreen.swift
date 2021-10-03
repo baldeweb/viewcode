@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 import SnapKit
 
-final class ViewControllerScreen: UIView {
+final class MainScreen: UIView {
     lazy var button: UIButton = {
         let view = UIButton(frame: .zero)
         view.setTitle("Enviar", for: .normal)
@@ -40,7 +40,7 @@ final class ViewControllerScreen: UIView {
     }
 }
 
-extension ViewControllerScreen: CodeView {
+extension MainScreen: CodeView {
     func buildViewHierarchy() {
         gridContainer.addArrangedSubview(leftBox)
         gridContainer.addArrangedSubview(rightBox)
