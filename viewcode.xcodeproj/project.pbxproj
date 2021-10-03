@@ -15,7 +15,7 @@
 		BAD2695D27054B1A00875EAF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD2695C27054B1A00875EAF /* AppDelegate.swift */; };
 		BAD2696127054B1A00875EAF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD2696027054B1A00875EAF /* ViewController.swift */; };
 		BAD2696627054B1C00875EAF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAD2696527054B1C00875EAF /* Assets.xcassets */; };
-		BAD2697127054F2800875EAF /* ViewControllerScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD2697027054F2800875EAF /* ViewControllerScreen.swift */; };
+		BAD2697127054F2800875EAF /* MainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD2697027054F2800875EAF /* MainScreen.swift */; };
 		BAD26973270559D200875EAF /* CodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD26972270559D200875EAF /* CodeView.swift */; };
 /* End PBXBuildFile section */
 
@@ -45,7 +45,7 @@
 		BAD2696027054B1A00875EAF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BAD2696527054B1C00875EAF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BAD2696A27054B1C00875EAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BAD2697027054F2800875EAF /* ViewControllerScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerScreen.swift; sourceTree = "<group>"; };
+		BAD2697027054F2800875EAF /* MainScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreen.swift; sourceTree = "<group>"; };
 		BAD26972270559D200875EAF /* CodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -114,7 +114,7 @@
 				BAD2696027054B1A00875EAF /* ViewController.swift */,
 				BAD2696527054B1C00875EAF /* Assets.xcassets */,
 				BAD2696A27054B1C00875EAF /* Info.plist */,
-				BAD2697027054F2800875EAF /* ViewControllerScreen.swift */,
+				BAD2697027054F2800875EAF /* MainScreen.swift */,
 				BAD26972270559D200875EAF /* CodeView.swift */,
 				BA7C28862707E844009E28D4 /* GridBoxView.swift */,
 			);
@@ -239,7 +239,7 @@
 				BA64CCD12709E96F00B43EF5 /* SceneDelegate.swift in Sources */,
 				BA7C288A2707F24A009E28D4 /* GridBoxViewSpec.swift in Sources */,
 				BAD2696127054B1A00875EAF /* ViewController.swift in Sources */,
-				BAD2697127054F2800875EAF /* ViewControllerScreen.swift in Sources */,
+				BAD2697127054F2800875EAF /* MainScreen.swift in Sources */,
 				BAD2695D27054B1A00875EAF /* AppDelegate.swift in Sources */,
 				BAD26973270559D200875EAF /* CodeView.swift in Sources */,
 			);
