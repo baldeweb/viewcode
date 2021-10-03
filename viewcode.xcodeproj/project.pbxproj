@@ -10,6 +10,8 @@
 		64B0C588C164D3D0B8438C79 /* Pods_viewcode.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CA0F9D15AD42AEC046D1E27 /* Pods_viewcode.framework */; };
 		BA64CCCF2709E88800B43EF5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA64CCCE2709E88800B43EF5 /* LaunchScreen.storyboard */; };
 		BA64CCD12709E96F00B43EF5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA64CCD02709E96F00B43EF5 /* SceneDelegate.swift */; };
+		BA64CCD32709FD3D00B43EF5 /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA64CCD22709FD3D00B43EF5 /* LoginScreen.swift */; };
+		BA64CCD5270A67F900B43EF5 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA64CCD4270A67F900B43EF5 /* Utils.swift */; };
 		BA7C28872707E844009E28D4 /* GridBoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7C28862707E844009E28D4 /* GridBoxView.swift */; };
 		BA7C288A2707F24A009E28D4 /* GridBoxViewSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7C28892707F24A009E28D4 /* GridBoxViewSpec.swift */; };
 		BAD2695D27054B1A00875EAF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD2695C27054B1A00875EAF /* AppDelegate.swift */; };
@@ -38,6 +40,8 @@
 		A942C2CB9E682E02C0C12376 /* Pods-viewcode.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-viewcode.release.xcconfig"; path = "Target Support Files/Pods-viewcode/Pods-viewcode.release.xcconfig"; sourceTree = "<group>"; };
 		BA64CCCE2709E88800B43EF5 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BA64CCD02709E96F00B43EF5 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		BA64CCD22709FD3D00B43EF5 /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
+		BA64CCD4270A67F900B43EF5 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		BA7C28862707E844009E28D4 /* GridBoxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridBoxView.swift; sourceTree = "<group>"; };
 		BA7C28892707F24A009E28D4 /* GridBoxViewSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridBoxViewSpec.swift; sourceTree = "<group>"; };
 		BAD2695927054B1A00875EAF /* viewcode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = viewcode.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -115,8 +119,10 @@
 				BAD2696527054B1C00875EAF /* Assets.xcassets */,
 				BAD2696A27054B1C00875EAF /* Info.plist */,
 				BAD2697027054F2800875EAF /* MainScreen.swift */,
+				BA64CCD22709FD3D00B43EF5 /* LoginScreen.swift */,
 				BAD26972270559D200875EAF /* CodeView.swift */,
 				BA7C28862707E844009E28D4 /* GridBoxView.swift */,
+				BA64CCD4270A67F900B43EF5 /* Utils.swift */,
 			);
 			path = viewcode;
 			sourceTree = "<group>";
@@ -237,9 +243,11 @@
 			files = (
 				BA7C28872707E844009E28D4 /* GridBoxView.swift in Sources */,
 				BA64CCD12709E96F00B43EF5 /* SceneDelegate.swift in Sources */,
+				BA64CCD5270A67F900B43EF5 /* Utils.swift in Sources */,
 				BA7C288A2707F24A009E28D4 /* GridBoxViewSpec.swift in Sources */,
 				BAD2696127054B1A00875EAF /* ViewController.swift in Sources */,
 				BAD2697127054F2800875EAF /* MainScreen.swift in Sources */,
+				BA64CCD32709FD3D00B43EF5 /* LoginScreen.swift in Sources */,
 				BAD2695D27054B1A00875EAF /* AppDelegate.swift in Sources */,
 				BAD26973270559D200875EAF /* CodeView.swift in Sources */,
 			);
