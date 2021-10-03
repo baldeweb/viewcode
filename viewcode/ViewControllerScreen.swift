@@ -13,7 +13,8 @@ final class ViewControllerScreen: UIView {
     lazy var button: UIButton = {
         let view = UIButton(frame: .zero)
         view.setTitle("Enviar", for: .normal)
-        view.backgroundColor = .green
+        view.backgroundColor = .purple
+        view.setTitleColor(.white, for: .normal)
         return view
     }()
     
@@ -41,26 +42,25 @@ final class ViewControllerScreen: UIView {
 
 extension ViewControllerScreen: CodeView {
     func buildViewHierarchy() {
-        addSubview(button)
         gridContainer.addArrangedSubview(leftBox)
         gridContainer.addArrangedSubview(rightBox)
         addSubview(gridContainer)
+        addSubview(button)
     }
     
     func setupConstraints() {
         gridContainer.snp.makeConstraints { make in
             make.left.equalToSuperview().offset(15)
             make.right.equalToSuperview().inset(15)
-            make.height.equalTo(320)
-            make.centerY.equalToSuperview()
+            make.height.equalTo(200)
+            make.centerX.equalToSuperview()
         }
         
         button.snp.makeConstraints { make in
             make.left.equalToSuperview().offset(15)
             make.right.equalToSuperview().inset(15)
-            make.bottom.equalToSuperview().inset(15)
-            make.width.equalToSuperview()
-            make.height.equalTo(40)
+            make.bottom.equalToSuperview().inset(30)
+            make.height.equalTo(50)
         }
     }
     
