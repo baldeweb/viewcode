@@ -22,6 +22,10 @@ open class MainScreen: UIView {
 }
 
 extension MainScreen: CodeView {
+    func createViewComponents() {
+        
+    }
+    
     func buildViewHierarchy() {
         
     }

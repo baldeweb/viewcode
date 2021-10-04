@@ -48,6 +48,10 @@ final class GridBoxView: UIView {
 }
 
 extension GridBoxView: CodeView {
+    func createViewComponents() {
+        
+    }
+    
     func buildViewHierarchy() {
         addSubview(imageView)
         textContainer.addArrangedSubview(title)

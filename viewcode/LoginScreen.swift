@@ -11,7 +11,7 @@ import UIKit
 import SnapKit
 
 final class LoginScreen: UIView {
-
+    
     private lazy var contentView: UIStackView = {
         let view = UIStackView(frame: .zero)
         view.axis = .vertical
@@ -21,38 +21,9 @@ final class LoginScreen: UIView {
         return view
     }()
     
-    lazy var usernameTextField: UITextField = {
-        let view = UITextField(frame: .zero)
-        view.keyboardType = .alphabet
-        view.textColor = .black
-        view.attributedPlaceholder = NSAttributedString(
-            string: "Username",
-            attributes: [NSAttributedString.Key.foregroundColor: hexStringToUIColor(hex: "#9E9E9E")]
-        )
-        view.backgroundColor = hexStringToUIColor(hex: "#EDE7F6")
-        return view
-    }()
-    
-    lazy var passwordTextField: UITextField = {
-        let view = UITextField(frame: .zero)
-        view.textContentType = .password
-        view.keyboardType = .numberPad
-        view.textColor = .black
-        view.attributedPlaceholder = NSAttributedString(
-            string: "Password",
-            attributes: [NSAttributedString.Key.foregroundColor: hexStringToUIColor(hex: "#9E9E9E")]
-        )
-        view.backgroundColor = hexStringToUIColor(hex: "#EDE7F6")
-        return view
-    }()
-    
-    lazy var button: UIButton = {
-        let view = UIButton(frame: .zero)
-        view.setTitle("Enviar", for: .normal)
-        view.setTitleColor(.white, for: .normal)
-        view.backgroundColor = hexStringToUIColor(hex: "#311B92")
-        return view
-    }()
+    private var usernameTextField: UITextField!
+    private var passwordTextField: UITextField!
+    private var button: UIButton!
     
     override init(frame: CGRect = .zero) {
         super.init(frame: frame)
@@ -62,9 +33,30 @@ final class LoginScreen: UIView {
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+    
+    @objc func buttonAction(sender: UIButton!) {
+        print("LOG >> CLICOU")
+    }
 }
 
 extension LoginScreen: CodeView {
+    func createViewComponents() {
+        button = Button(frame: .zero).DefaultButton(self,
+                                                    title: "Enviar",
+                                                    selector: #selector(buttonAction)
+        )
+        usernameTextField = TextField(frame: .zero).DefaultField(self,
+                                                                 placeholder: "Usuário",
+                                                                 keyboardType: nil,
+                                                                 textColor: nil
+        )
+        passwordTextField = TextField(frame: .zero).DefaultField(self,
+                                                                 placeholder: "Senha",
+                                                                 keyboardType: .numberPad,
+                                                                 textColor: nil
+        )
+    }
+    
     func buildViewHierarchy() {
         contentView.addArrangedSubview(usernameTextField)
         contentView.addArrangedSubview(passwordTextField)
@@ -92,7 +84,7 @@ extension LoginScreen: CodeView {
             make.right.equalToSuperview().inset(15)
             make.height.equalTo(60)
         }
-
+        
         button.snp.makeConstraints { make in
             make.left.equalToSuperview().offset(15)
             make.right.equalToSuperview().inset(15)
